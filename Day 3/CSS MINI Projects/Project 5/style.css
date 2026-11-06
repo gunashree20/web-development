@@ -1,0 +1,155 @@
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page design */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 30px 15px;
+}
+
+/* Main heading */
+.page-title {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+/* Upload section */
+.upload-section {
+    background-color: white;
+    max-width: 450px;
+    margin: 0 auto 25px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.upload-section h2 {
+    margin-bottom: 15px;
+}
+
+.upload-section input {
+    margin-bottom: 10px;
+}
+
+.upload-section p {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Profile card */
+.profile-card {
+    background-color: white;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+/* Card hover effect */
+.profile-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Profile header */
+.profile-header {
+    background: linear-gradient(135deg, #4169e1, #8a2be2);
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+}
+
+/* Profile image */
+.profile-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Name */
+.profile-header h2 {
+    margin-bottom: 8px;
+    font-size: 25px;
+}
+
+/* Course */
+.course {
+    font-size: 15px;
+}
+
+/* Profile details */
+.profile-details {
+    padding: 25px;
+}
+
+.profile-details h3 {
+    color: #4169e1;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.profile-details p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills span {
+    background-color: #e8edff;
+    color: #4169e1;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Contact button */
+.contact-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #25D366;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #128C7E;
+}
+/* Mobile responsive design */
+@media (max-width: 480px) {
+
+    .profile-details {
+        padding: 18px;
+    }
+
+    .profile-header h2 {
+        font-size: 22px;
+    }
+
+}

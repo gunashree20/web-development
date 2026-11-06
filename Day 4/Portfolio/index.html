@@ -1,0 +1,1133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Defines character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title shown in browser tab -->
+    <title>My Portfolio | Gunashree Yogish</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Our custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top site-nav">
+
+    <div class="container">
+
+        <!-- Website logo -->
+        <a class="navbar-brand brand-mark" href="#home">
+            a<span>.</span>
+        </a>
+
+        <!-- Mobile navigation button -->
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNav"
+                aria-controls="mainNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#journey">Journey</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="btn btn-dark nav-cta" href="#contact">
+                        Let's connect <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO SECTION ================= -->
+
+<header class="hero-section" id="home">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-5">
+
+            <!-- Left side introduction -->
+            <div class="col-lg-7">
+
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    BCA STUDENT · ASPIRING WEB DEVELOPER
+                </p>
+
+                <h1>
+                    Turning curiosity<br>
+                    into <em>creation.</em>
+                </h1>
+
+                <p class="hero-copy">
+                    Hello, I'm <strong>Gunashree Yogish</strong>.
+                    I enjoy learning how the web works and building
+                    simple, useful digital experiences one project at a time.
+                </p>
+
+                <div class="d-flex flex-wrap gap-3 mt-4">
+
+                    <a href="#projects"
+                       class="btn btn-dark btn-lg rounded-pill px-4">
+
+                        Explore my work
+                        <i class="bi bi-arrow-down-right ms-2"></i>
+
+                    </a>
+
+                    <a href="#contact"
+                       class="btn btn-outline-dark btn-lg rounded-pill px-4">
+
+                        Get in touch
+
+                    </a>
+
+                </div>
+
+                <!-- Social media links -->
+                <div class="social-row mt-4">
+
+                    <a href="https://github.com/yourusername">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/yourusername/">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+
+                    <a href="mailto:you@example.com">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+
+                    <span class="social-note">
+                        Bengaluru, India · Open to learning
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right side personal photograph -->
+            <div class="col-lg-5">
+
+                <div class="portrait-wrap">
+
+                    <div class="portrait-note">
+                        A LITTLE ABOUT ME <span>↘</span>
+                    </div>
+
+                    <!-- Students replace profile.jpg with their own photo -->
+                    <img src="assets/profile.jpg"
+                         class="hero-portrait"
+                         alt="My profile photograph"
+                         onerror="this.onerror=null;this.src='https://placehold.co/600x750/e7e8dc/829f25?text=Add+Your+Photo';">
+
+                    <div class="portrait-sticker">
+                        <span>✳</span><br>
+                        LEARN<br>
+                        BUILD<br>
+                        REPEAT
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Scroll indicator -->
+        <div class="hero-bottom">
+
+            <span>SCROLL TO EXPLORE</span>
+
+            <span class="scroll-line"></span>
+
+            <span>01 / 06</span>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= PERSONAL MANTRA ================= -->
+
+<section class="intro-strip">
+
+    <div class="container">
+
+        <div class="row align-items-center gy-3">
+
+            <div class="col-md-4">
+
+                <p class="eyebrow mb-0">
+                    MY PERSONAL MANTRA
+                </p>
+
+            </div>
+
+            <div class="col-md-8">
+
+                <p class="strip-quote mb-0">
+                    Stay curious. Keep creating.
+                    <em>Make things that matter.</em>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT SECTION ================= -->
+
+<section class="section-pad" id="about">
+
+    <div class="container">
+
+        <div class="section-kicker">
+            01 / THE PERSON BEHIND THE SCREEN
+        </div>
+
+        <div class="row gy-4 align-items-start">
+
+            <div class="col-lg-5">
+
+                <h2 class="section-title">
+                    A learner today.<br>
+                    <em>A builder for tomorrow.</em>
+                </h2>
+
+            </div>
+
+
+            <div class="col-lg-6 offset-lg-1">
+
+                <p class="lead-copy">
+                    I'm a Bachelor of Computer Applications student
+                    who is curious about technology, design and the way
+                    people interact with websites.
+                </p>
+
+                <p class="body-copy">
+                    I'm currently strengthening my foundations in
+                    HTML, CSS, JavaScript and Bootstrap.
+
+                    I believe the best way to learn is to experiment,
+                    make mistakes, solve problems and turn ideas
+                    into working projects.
+                </p>
+
+
+                <div class="about-facts row g-3 mt-3">
+
+                    <div class="col-6">
+
+                        <div class="fact-box">
+
+                            <span>01</span>
+
+                            <strong>Curious mind</strong>
+
+                            <small>Always exploring</small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-6">
+
+                        <div class="fact-box">
+
+                            <span>02</span>
+
+                            <strong>Hands-on learner</strong>
+
+                            <small>Learning by building</small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS SECTION ================= -->
+
+<section class="skills-section section-pad" id="skills">
+
+    <div class="container">
+
+        <div class="section-kicker">
+            02 / WHAT I'M LEARNING
+        </div>
+
+        <div class="row align-items-end mb-5 gy-3">
+
+            <div class="col-lg-7">
+
+                <h2 class="section-title">
+                    Tools in my <em>toolkit.</em>
+                </h2>
+
+            </div>
+
+            <div class="col-lg-4 offset-lg-1">
+
+                <p class="body-copy mb-0">
+                    A growing set of technologies I use to bring
+                    ideas to life.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="row g-3">
+
+            <!-- Skill 1 -->
+            <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-code-slash"></i>
+
+                    <strong>HTML5</strong>
+
+                    <small>Structure</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Skill 2 -->
+            <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-palette"></i>
+
+                    <strong>CSS3</strong>
+
+                    <small>Visual design</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Skill 3 -->
+            <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-braces"></i>
+
+                    <strong>JavaScript</strong>
+
+                    <small>Interactivity</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Skill 4 -->
+            <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-bootstrap"></i>
+
+                    <strong>Bootstrap</strong>
+
+                    <small>Responsive UI</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Skill 5 -->
+            <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-git"></i>
+
+                    <strong>Git</strong>
+
+                    <small>Version control</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Skill 6 -->
+            <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-github"></i>
+
+                    <strong>GitHub</strong>
+
+                    <small>Code collaboration</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Skill 7 -->
+            <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-filetype-js"></i>
+
+                    <strong>jQuery</strong>
+
+                    <small>DOM basics</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Skill 8 -->
+            <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="skill-card">
+
+                    <i class="bi bi-lightbulb"></i>
+
+                    <strong>Problem solving</strong>
+
+                    <small>Thinking & testing</small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= JOURNEY SECTION ================= -->
+
+<section class="section-pad" id="journey">
+
+    <div class="container">
+
+        <div class="section-kicker">
+            03 / MY LEARNING JOURNEY
+        </div>
+
+        <h2 class="section-title mb-5">
+            Every step is <em>progress.</em>
+        </h2>
+
+
+        <div class="timeline">
+
+            <article class="timeline-item">
+
+                <div class="timeline-date">
+                    2024 — PRESENT
+                </div>
+
+                <div>
+
+                    <h3>Bachelor of Computer Applications</h3>
+
+                    <p class="body-copy">
+                        Your College Name · Learning programming,
+                        databases, web technologies and computer fundamentals.
+                    </p>
+
+                </div>
+
+                <span class="timeline-index">01</span>
+
+            </article>
+
+
+            <article class="timeline-item">
+
+                <div class="timeline-date">
+                    DAY 01 — 04
+                </div>
+
+                <div>
+
+                    <h3>Web Development Workshop</h3>
+
+                    <p class="body-copy">
+                        Built interactive mini-projects and explored
+                        HTML, CSS, JavaScript, jQuery, Bootstrap,
+                        Git and deployment.
+                    </p>
+
+                </div>
+
+                <span class="timeline-index">02</span>
+
+            </article>
+
+
+            <article class="timeline-item">
+
+                <div class="timeline-date">
+                    NEXT CHAPTER
+                </div>
+
+                <div>
+
+                    <h3>More projects. More learning.</h3>
+
+                    <p class="body-copy">
+                        Exploring new tools, improving my portfolio
+                        and collaborating with other developers.
+                    </p>
+
+                </div>
+
+                <span class="timeline-index">03</span>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS SECTION ================= -->
+
+<section class="projects-section section-pad" id="projects">
+
+    <div class="container">
+
+        <div class="section-kicker">
+            04 / SELECTED WORK
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-between
+                    align-items-end gap-3 mb-5">
+
+            <h2 class="section-title mb-0">
+                Small projects.<br>
+                <em>Big learning.</em>
+            </h2>
+
+            <p class="body-copy project-intro mb-1">
+                A few things I've built while learning to code.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-md-6">
+
+                <article class="project-card">
+
+                    <div class="project-visual visual-lime">
+
+                        <span class="visual-label">
+                            01 / CSS ANIMATION
+                        </span>
+
+                        <div class="demo-ball"></div>
+
+                        <span class="visual-caption">
+                            BOUNCING BALL
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+                        <div>
+
+                            <h3>Bouncing Ball</h3>
+
+                            <p>
+                                My first experiments with CSS keyframe animations.
+                            </p>
+
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+
+                        </div>
+
+                        <a href="https://github.com/yourusername/bouncing-ball"
+                           class="project-link"
+                           aria-label="Open Bouncing Ball project">
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Project 2 -->
+            <div class="col-md-6">
+
+                <article class="project-card">
+
+                    <div class="project-visual visual-lavender">
+
+                        <span class="visual-label">
+                            02 / CSS ANIMATION
+                        </span>
+
+                        <div class="loader-demo"></div>
+
+                        <span class="visual-caption">
+                            LOADING SPINNER
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+                        <div>
+
+                            <h3>Loading Spinner</h3>
+
+                            <p>
+                                An animated loading indicator made with CSS.
+                            </p>
+
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+
+                        </div>
+
+                        <a href="https://github.com/yourusername/loading-spinner"
+                           class="project-link"
+                           aria-label="Open Loading Spinner project">
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Project 3 -->
+            <div class="col-md-6">
+
+                <article class="project-card">
+
+                    <div class="project-visual visual-peach">
+
+                        <span class="visual-label">
+                            03 / UI DESIGN
+                        </span>
+
+                        <div class="mini-profile">
+
+                            <div class="mini-avatar">A</div>
+
+                            <b> Gunashree Yogish</b>
+
+                            <small>Creative learner</small>
+
+                            <span class="mini-pill">
+                                VIEW PROFILE
+                            </span>
+
+                        </div>
+
+                        <span class="visual-caption">
+                            PROFILE CARD
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+                        <div>
+
+                            <h3>Profile Card</h3>
+
+                            <p>
+                                A responsive profile card with clean design.
+                            </p>
+
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+
+                        </div>
+
+                        <a href="https://github.com/yourusername/profile-card"
+                           class="project-link"
+                           aria-label="Open Profile Card project">
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Project 4 -->
+            <div class="col-md-6">
+
+                <article class="project-card">
+
+                    <div class="project-visual visual-blue">
+
+                        <span class="visual-label">
+                            04 / JAVASCRIPT GAME
+                        </span>
+
+                        <div class="game-demo">
+
+                            <span>?</span>
+
+                            <span>
+                                GUESS<br>THE NUMBER
+                            </span>
+
+                            <b>01 — 10</b>
+
+                        </div>
+
+                        <span class="visual-caption">
+                            GUESS THE NUMBER
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+                        <div>
+
+                            <h3>Guess the Number</h3>
+
+                            <p>
+                                A guessing game using JavaScript logic and events.
+                            </p>
+
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">DOM</span>
+
+                        </div>
+
+                        <a href="https://github.com/yourusername/guess-the-number"
+                           class="project-link"
+                           aria-label="Open Guess the Number project">
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Project 5 -->
+            <div class="col-md-6">
+
+                <article class="project-card">
+
+                    <div class="project-visual visual-pink">
+
+                        <span class="visual-label">
+                            05 / JAVASCRIPT GAME
+                        </span>
+
+                        <div class="mole-grid">
+
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i class="mole"></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <i></i>
+
+                        </div>
+
+                        <span class="visual-caption">
+                            WHACK-A-MOLE
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+                        <div>
+
+                            <h3>Whack-a-Mole</h3>
+
+                            <p>
+                                A browser game practising events and score updates.
+                            </p>
+
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">DOM</span>
+
+                        </div>
+
+                        <a href="https://github.com/yourusername/whack-a-mole"
+                           class="project-link"
+                           aria-label="Open Whack-a-Mole project">
+
+                            <i class="bi bi-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Project 6: Student's own project -->
+            <div class="col-md-6">
+
+                <article class="project-card add-project">
+
+                    <div class="add-project-inner">
+
+                        <span>✳</span>
+
+                        <h3>Your next project goes here.</h3>
+
+                        <p>
+                            Keep building. Add your own project card
+                            and link it to GitHub.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <div class="text-center mt-5">
+
+            <a class="text-link"
+               href="https://github.com/yourusername"
+               target="_blank"
+               rel="noreferrer">
+
+                Explore my GitHub
+                <i class="bi bi-arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ACHIEVEMENTS SECTION ================= -->
+
+<section class="section-pad achievements-section">
+
+    <div class="container">
+
+        <div class="section-kicker">
+            05 / MILESTONES
+        </div>
+
+        <div class="row gy-4 align-items-center">
+
+            <div class="col-lg-6">
+
+                <h2 class="section-title">
+                    Collect moments.<br>
+                    <em>Celebrate growth.</em>
+                </h2>
+
+                <p class="body-copy mt-3">
+                    Use this space for certificates, hackathons,
+                    volunteering, presentations and competitions.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-5 offset-lg-1">
+
+                <div class="achievement-row">
+
+                    <span>2026</span>
+
+                    <div>
+
+                        <strong>Web Development Workshop</strong>
+
+                        <small>
+                            HTML · CSS · JavaScript · Bootstrap
+                        </small>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </div>
+
+
+                <div class="achievement-row">
+
+                    <span>2025</span>
+
+                    <div>
+
+                        <strong>Your Certificate</strong>
+
+                        <small>Institution / Organizer</small>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </div>
+
+
+                <div class="achievement-row">
+
+                    <span>2024</span>
+
+                    <div>
+
+                        <strong>Your College Activity</strong>
+
+                        <small>College / Community</small>
+
+                    </div>
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact-section section-pad" id="contact">
+
+    <div class="container">
+
+        <div class="section-kicker">
+            06 / LET'S CONNECT
+        </div>
+
+        <div class="row gy-4 align-items-end">
+
+            <div class="col-lg-8">
+
+                <h2>
+                    Have an idea?<br>
+                    Let's make it <em>happen.</em>
+                </h2>
+
+                <p>
+                    I'm always happy to connect, learn from others
+                    and explore opportunities to build something meaningful.
+                </p>
+
+            </div>
+
+
+            <div class="col-lg-4 text-lg-end">
+
+                <a class="btn btn-light btn-lg rounded-pill px-4"
+                   href="mailto:you@example.com">
+
+                    Say hello
+                    <i class="bi bi-arrow-up-right ms-2"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-bottom">
+
+            <a href="mailto:you@example.com">
+                you@example.com
+            </a>
+
+
+            <div class="contact-socials">
+
+                <a href="https://github.com/yourusername">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/yourusername/">
+                    LinkedIn
+                </a>
+
+                <a href="#home">
+                    Back to top ↑
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+
+        <span>
+            © <span id="year"></span> Gunashree Yogish. Made with curiosity.
+        </span>
+
+        <span>
+            DESIGNED & BUILT BY ME ✳
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Our custom JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>

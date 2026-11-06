@@ -1,0 +1,602 @@
+
+/* Selects every element on the page. */
+* {
+    margin: 0; /* Removes the browser's default outer spacing. */
+    padding: 0; /* Removes the browser's default inner spacing. */
+    box-sizing: border-box; /* Includes padding and borders within declared dimensions. */
+}
+
+/* Defines reusable website colours. */
+:root {
+    --navy: #14251f; /* Deep green-black for headings and dark sections. */
+    --cream: #f7f5ef; /* Warm ivory for the page background. */
+    --gold: #c49a55; /* Muted gold for highlights. */
+    --text: #34433d; /* Dark grey-green for body text. */
+    --white: #ffffff; /* White for cards and text on dark backgrounds. */
+}
+
+/* Styles the whole page. */
+body {
+    font-family: Arial, sans-serif; /* Sets a readable font. */
+    background-color: var(--cream); /* Applies the cream page background. */
+    color: var(--text); /* Sets the default text colour. */
+    line-height: 1.6; /* Improves readability between lines. */
+}
+
+/* Styles common images. */
+img {
+    max-width: 100%; /* Prevents images from exceeding their containers. */
+    display: block; /* Removes the extra inline space below images. */
+}
+
+/* Styles common links. */
+a {
+    text-decoration: none; /* Removes the default underline. */
+    color: inherit; /* Inherits the surrounding text colour. */
+}
+
+/* Creates a reusable content container. */
+.container {
+    width: min(1120px, 90%); /* Uses a maximum width and leaves side space. */
+    margin: 0 auto; /* Centres the container horizontally. */
+}
+
+/* Gives all major sections consistent spacing. */
+.section {
+    padding: 80px 0; /* Adds top and bottom spacing. */
+}
+
+/* Styles section headings. */
+.section-title {
+    font-size: clamp(28px, 4vw, 42px); /* Adjusts heading size to screen width. */
+    color: var(--navy); /* Uses the primary brand colour. */
+    margin-bottom: 16px; /* Adds space below the heading. */
+}
+
+/* Styles introductory text. */
+.section-intro {
+    max-width: 650px; /* Prevents the paragraph from becoming too wide. */
+    margin-bottom: 35px; /* Adds space before the content. */
+}
+.card {                       /* Selects every card. */
+    width: 300px;              /* Sets the card width. */
+    padding: 20px;             /* Adds inner spacing. */
+    border: 1px solid #ddd;    /* Adds a thin border. */
+    margin: 15px;              /* Adds outer spacing. */
+    border-radius: 12px;       /* Rounds the card corners. */
+}
+
+/* Styles the navigation header. */
+.site-header {
+    background: var(--white); /* Gives the header a white background. */
+    position: sticky; /* Keeps the header near the top while scrolling. */
+    top: 0; /* Sets the sticky position. */
+    z-index: 100; /* Keeps the header above ordinary page content. */
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); /* Adds a subtle shadow. */
+}
+
+/* Arranges the navigation items horizontally. */
+.nav {
+    min-height: 76px; /* Sets the minimum header height. */
+    display: flex; /* Enables Flexbox. */
+    align-items: center; /* Vertically aligns the items. */
+    justify-content: space-between; /* Distributes items across the row. */
+    gap: 24px; /* Adds space between the groups. */
+}
+
+/* Styles the logo. */
+.logo {
+    font-size: 25px; /* Increases logo text size. */
+    font-weight: 800; /* Makes the logo bold. */
+    color: var(--navy); /* Uses the primary brand colour. */
+}
+
+/* Highlights the second part of the logo. */
+.logo span {
+    color: var(--gold); /* Applies the gold accent. */
+}
+
+/* Removes list bullets and arranges links horizontally. */
+.nav-links {
+    display: flex; /* Makes list items flex items. */
+    align-items: center; /* Vertically aligns links. */
+    gap: 26px; /* Adds spacing between links. */
+    list-style: none; /* Removes bullet points. */
+}
+
+/* Styles the navigation links. */
+.nav-links a {
+    font-size: 14px; /* Sets link text size. */
+    font-weight: 600; /* Makes links semi-bold. */
+    transition: color 0.3s ease; /* Smoothly changes link colour. */
+}
+
+/* Adds a hover effect to navigation links. */
+.nav-links a:hover {
+    color: var(--gold); /* Changes the link colour on hover. */
+}
+
+/* Styles the main navigation button. */
+.nav-button {
+    background: var(--navy); /* Gives the button a dark background. */
+    color: var(--white); /* Makes the button text white. */
+    padding: 12px 20px; /* Adds space inside the button. */
+    border-radius: 30px; /* Creates rounded corners. */
+    font-size: 14px; /* Sets button text size. */
+}
+
+/* Creates the hero background and its positioning context. */
+.hero {
+    min-height: 580px; /* Gives the hero a generous height. */
+    display: flex; /* Enables flexible alignment. */
+    align-items: center; /* Vertically centres hero content. */
+    color: var(--white); /* Makes hero text white. */
+    background:
+        linear-gradient(rgba(10, 25, 20, 0.65), rgba(10, 25, 20, 0.55)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1800") center/cover; /* Adds a dark overlay over the background image. */
+}
+
+/* Limits the width of hero text. */
+.hero-content {
+    max-width: 800px; /* Prevents the heading from becoming too wide. */
+}
+
+/* Styles the small introductory label. */
+.eyebrow {
+    color: #e7c58e; /* Applies a soft gold colour. */
+    font-size: 12px; /* Sets a small text size. */
+    font-weight: 700; /* Makes the label bold. */
+    letter-spacing: 3px; /* Adds spacing between letters. */
+    margin-bottom: 20px; /* Adds space below the label. */
+}
+
+/* Styles the main hero heading. */
+.hero h1 {
+    font-size: clamp(42px, 6vw, 72px); /* Makes the heading responsive. */
+    line-height: 1.08; /* Keeps the heading compact. */
+    margin-bottom: 22px; /* Adds space below the heading. */
+}
+
+/* Styles the hero description. */
+.hero-description {
+    max-width: 580px; /* Limits paragraph width. */
+    color: #e9e9e9; /* Uses a softer white. */
+    margin-bottom: 30px; /* Adds space before the buttons. */
+}
+
+/* Arranges the hero buttons. */
+.hero-actions {
+    display: flex; /* Places buttons in a row. */
+    flex-wrap: wrap; /* Allows wrapping on narrow screens. */
+    gap: 14px; /* Adds spacing between buttons. */
+}
+
+/* Shared button appearance. */
+.button {
+    display: inline-block; /* Allows padding and dimensions while flowing inline. */
+    padding: 14px 23px; /* Adds inner spacing. */
+    border-radius: 30px; /* Creates rounded button corners. */
+    font-weight: 700; /* Makes button text bold. */
+    transition: 0.3s ease; /* Smooths hover changes. */
+}
+
+/* Styles the primary button. */
+.button-primary {
+    background: var(--gold); /* Applies the gold background. */
+    color: var(--navy); /* Uses dark text for contrast. */
+}
+
+/* Styles the secondary button. */
+.button-outline {
+    border: 1px solid rgba(255, 255, 255, 0.8); /* Adds a light outline. */
+    color: var(--white); /* Makes text white. */
+}
+
+/* Adds a small hover movement to both buttons. */
+.button:hover {
+    transform: translateY(-3px); /* Moves the button slightly upwards. */
+}
+
+/* Creates a three-column destination grid. */
+.destination-grid {
+    display: grid; /* Enables CSS Grid. */
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns. */
+    gap: 25px; /* Adds space between cards. */
+}
+
+/* Styles each destination card. */
+.destination-card {
+    background: var(--white); /* Gives the card a white background. */
+    border-radius: 16px; /* Rounds the card corners. */
+    overflow: hidden; /* Clips content that extends beyond the rounded corners. */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06); /* Adds a subtle shadow. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooths hover effects. */
+}
+
+/* Adds movement when a visitor hovers over a card. */
+.destination-card:hover {
+    transform: translateY(-7px); /* Moves the card upwards. */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); /* Makes the shadow more visible. */
+}
+
+/* Controls destination image dimensions. */
+.destination-card img {
+    width: 100%; /* Fills the card width. */
+    height: 220px; /* Sets a consistent image height. */
+    object-fit: cover; /* Crops the image without distorting its proportions. */
+}
+
+/* Adds spacing inside card content. */
+.card-content {
+    padding: 22px; /* Creates inner card spacing. */
+}
+
+/* Styles the small category label. */
+.card-label {
+    color: var(--gold); /* Applies the accent colour. */
+    font-size: 11px; /* Makes the label compact. */
+    font-weight: 800; /* Makes the label bold. */
+    letter-spacing: 1.5px; /* Adds letter spacing. */
+}
+
+/* Styles destination names. */
+.destination-card h3 {
+    color: var(--navy); /* Uses the main brand colour. */
+    margin: 8px 0; /* Adds vertical spacing. */
+    font-size: 21px; /* Sets the heading size. */
+}
+
+/* Styles the destination description. */
+.destination-card p:not(.card-label) {
+    font-size: 14px; /* Sets a comfortable text size. */
+    color: #68736d; /* Uses muted text. */
+}
+
+/* Styles the destination link. */
+.card-link {
+    display: inline-block; /* Allows margin above the link. */
+    margin-top: 15px; /* Adds spacing before the link. */
+    color: var(--navy); /* Uses the brand colour. */
+    font-weight: 700; /* Makes the link bold. */
+}
+
+/* Creates the package section's dark background. */
+.packages {
+    background: #eae9e1; /* Uses a muted neutral background. */
+}
+
+/* Arranges package cards in three columns. */
+.package-grid {
+    display: grid; /* Enables Grid layout. */
+    grid-template-columns: repeat(3, 1fr); /* Creates three equal columns. */
+    gap: 22px; /* Adds spacing between packages. */
+}
+
+/* Styles each package card. */
+.package-card {
+    background: var(--white); /* Gives the package a white background. */
+    padding: 30px; /* Adds inner spacing. */
+    border-radius: 16px; /* Rounds the corners. */
+    border: 1px solid #e5e3dc; /* Adds a subtle border. */
+}
+
+/* Highlights the popular package. */
+.package-card.featured {
+    border: 2px solid var(--gold); /* Makes the border stand out. */
+    transform: translateY(-8px); /* Raises the card slightly. */
+}
+
+/* Styles the package title. */
+.package-card h3 {
+    margin: 12px 0; /* Adds spacing around the heading. */
+    color: var(--navy); /* Uses the brand colour. */
+}
+
+/* Styles the package price. */
+.price {
+    font-size: 27px; /* Makes the price prominent. */
+    font-weight: 800; /* Makes the price bold. */
+    color: var(--navy); /* Applies the primary colour. */
+    margin-bottom: 20px; /* Adds space below the price. */
+}
+
+/* Styles the price unit. */
+.price small {
+    font-size: 13px; /* Makes the unit smaller. */
+    font-weight: 400; /* Removes bold styling from the unit. */
+}
+
+/* Styles the package features. */
+.package-card ul {
+    list-style: none; /* Removes the default bullets. */
+    margin-bottom: 25px; /* Adds space before the button. */
+}
+
+/* Adds spacing to individual features. */
+.package-card li {
+    padding: 7px 0; /* Adds vertical spacing. */
+    border-bottom: 1px solid #eee; /* Separates feature rows. */
+    font-size: 14px; /* Sets feature text size. */
+}
+
+/* Creates a two-column gallery. */
+.gallery-grid {
+    display: grid; /* Enables Grid layout. */
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns. */
+    gap: 16px; /* Adds space between images. */
+}
+
+/* Styles the gallery photographs. */
+.gallery-grid img {
+    width: 100%; /* Fills each grid cell. */
+    height: 280px; /* Sets a consistent height. */
+    object-fit: cover; /* Crops images without stretching. */
+    border-radius: 14px; /* Rounds image corners. */
+}
+
+/* Applies styles when the screen width is 900px or less. */
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 14px; /* Reduces space between navigation links. */
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr); /* Changes destination cards to two columns. */
+    }
+
+    .package-grid {
+        grid-template-columns: repeat(2, 1fr); /* Changes packages to two columns. */
+    }
+
+}
+
+/* Applies styles when the screen width is 600px or less. */
+@media (max-width: 600px) {
+
+    .nav {
+        flex-wrap: wrap; /* Allows navigation content to wrap. */
+        padding: 15px 0; /* Adds vertical spacing. */
+    }
+
+    .nav-links {
+        width: 100%; /* Allows the link group to use the full row. */
+        justify-content: center; /* Centres the navigation links. */
+        flex-wrap: wrap; /* Allows links to wrap onto another line. */
+    }
+
+    .nav-button {
+        display: none; /* Hides the extra navigation button on small screens. */
+    }
+
+    .hero {
+        min-height: 500px; /* Reduces hero height on small screens. */
+    }
+
+    .hero h1 {
+        font-size: 42px; /* Reduces the main heading size. */
+    }
+
+    .destination-grid,
+    .package-grid {
+        grid-template-columns: 1fr; /* Stacks cards into a single column. */
+    }
+
+    .package-card.featured {
+        transform: none; /* Removes the raised-card effect on mobile. */
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Stacks gallery images vertically. */
+    }
+
+    .section {
+        padding: 55px 0; /* Reduces section spacing on mobile. */
+    }
+
+}
+
+/* Defines an animation named fadeIn. */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); } /* Starts transparent and slightly lower. */
+    to { opacity: 1; transform: translateY(0); } /* Ends fully visible in its original position. */
+}
+
+/* Applies the animation to the hero content. */
+.hero-content {
+    animation: fadeIn 1s ease-out; /* Runs fadeIn for one second. */
+}
+
+/* Defines a subtle floating animation. */
+@keyframes float {
+    0%, 100% { transform: translateY(0); } /* Sets the starting and ending positions. */
+    50% { transform: translateY(-8px); } /* Moves the element upwards halfway through. */
+}
+
+/* Applies the floating animation to the logo. */
+.logo {
+    animation: float 4s ease-in-out infinite; /* Repeats the animation continuously. */
+}
+@media (prefers-reduced-motion: reduce) { /* Detects a reduced-motion preference. */
+    *, *::before, *::after { /* Selects elements and their pseudo-elements. */
+        animation-duration: 0.01ms !important; /* Minimises animation duration. */
+        transition-duration: 0.01ms !important; /* Minimises transition duration. */
+        scroll-behavior: auto !important; /* Disables smooth scrolling. */
+    }
+}
+/* Arranges testimonials in two columns. */
+.testimonial-grid {
+    display: grid; /* Enables Grid layout. */
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns. */
+    gap: 20px; /* Adds space between cards. */
+}
+
+/* Styles individual testimonial cards. */
+.testimonial-card {
+    background: var(--white); /* Gives the card a white background. */
+    padding: 28px; /* Adds inner spacing. */
+    border-radius: 14px; /* Rounds the corners. */
+    border-left: 4px solid var(--gold); /* Adds a gold accent border. */
+}
+
+/* Styles the traveller's name. */
+.testimonial-card h3 {
+    margin-top: 18px; /* Adds space above the name. */
+    color: var(--navy); /* Uses the primary colour. */
+}
+
+/* Styles the destination information. */
+.testimonial-card small {
+    color: #777; /* Uses a muted text colour. */
+}
+
+/* Styles the booking section. */
+#booking {
+    background: var(--navy); /* Gives the booking section a dark background. */
+    color: var(--white); /* Makes its text white. */
+}
+
+/* Changes the booking heading colour. */
+#booking .section-title {
+    color: var(--white); /* Ensures the heading contrasts with the dark background. */
+}
+
+/* Limits the booking form width. */
+#booking form {
+    max-width: 650px; /* Prevents the form from becoming too wide. */
+    display: grid; /* Creates a simple vertical form layout. */
+    gap: 12px; /* Adds space between form controls. */
+}
+
+/* Styles form labels. */
+#booking label {
+    font-size: 14px; /* Sets label text size. */
+    font-weight: 600; /* Makes labels semi-bold. */
+}
+
+/* Styles form fields and dropdowns. */
+#booking input,
+#booking select,
+#booking textarea {
+    width: 100%; /* Makes controls fill the form width. */
+    padding: 13px; /* Adds inner spacing. */
+    border: 1px solid #d8d8d8; /* Adds a subtle border. */
+    border-radius: 8px; /* Rounds the field corners. */
+    font: inherit; /* Uses the surrounding font settings. */
+}
+
+/* Styles the form buttons. */
+#booking button {
+    padding: 14px 20px; /* Adds inner spacing. */
+    border: none; /* Removes the default border. */
+    border-radius: 25px; /* Rounds the button corners. */
+    background: var(--gold); /* Applies the gold accent. */
+    color: var(--navy); /* Makes button text dark. */
+    font-weight: 700; /* Makes the text bold. */
+    cursor: pointer; /* Shows a pointer cursor on hover. */
+}
+
+/* Styles the newsletter area. */
+.newsletter {
+    padding: 65px 0; /* Adds vertical spacing. */
+    background: #eae9e1; /* Applies a soft neutral background. */
+    text-align: center; /* Centres the text. */
+}
+
+/* Styles the newsletter form. */
+.newsletter-form {
+    max-width: 500px; /* Limits form width. */
+    margin: 22px auto 0; /* Centres the form and adds top spacing. */
+    display: flex; /* Places the input and button in one row. */
+    gap: 10px; /* Adds space between them. */
+}
+
+/* Styles the newsletter email input. */
+.newsletter-form input {
+    flex: 1; /* Lets the input use remaining space. */
+    min-width: 0; /* Allows the input to shrink inside Flexbox. */
+    padding: 13px; /* Adds inner spacing. */
+    border: 1px solid #ccc; /* Adds a light border. */
+    border-radius: 25px; /* Rounds the field corners. */
+}
+
+/* Styles the newsletter button. */
+.newsletter-form button {
+    border: none; /* Removes the default border. */
+    padding: 13px 20px; /* Adds inner spacing. */
+    background: var(--navy); /* Applies the dark brand colour. */
+    color: var(--white); /* Makes button text white. */
+    border-radius: 25px; /* Rounds the button corners. */
+    cursor: pointer; /* Shows a pointer cursor. */
+}
+
+/* Styles the footer background. */
+.site-footer {
+    background: #101c18; /* Creates a deep dark footer. */
+    color: #d5ddd8; /* Uses a soft light text colour. */
+    padding-top: 55px; /* Adds spacing above footer content. */
+}
+
+/* Arranges the footer groups. */
+.footer-content {
+    display: flex; /* Enables Flexbox. */
+    justify-content: space-between; /* Distributes groups across the row. */
+    flex-wrap: wrap; /* Allows groups to wrap on smaller screens. */
+    gap: 35px; /* Adds space between groups. */
+    padding-bottom: 40px; /* Adds space before copyright. */
+}
+
+/* Changes the footer logo colour. */
+.footer-logo {
+    color: var(--white); /* Makes the logo white. */
+}
+
+/* Styles footer headings. */
+.site-footer h3 {
+    color: var(--white); /* Makes headings white. */
+    margin-bottom: 12px; /* Adds spacing below headings. */
+}
+
+/* Styles footer paragraphs. */
+.site-footer p {
+    margin-bottom: 7px; /* Separates lines of information. */
+    font-size: 14px; /* Sets compact footer text. */
+}
+
+/* Adds a subtle footer divider. */
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.12); /* Adds a dividing line. */
+    padding: 20px 0; /* Adds vertical spacing. */
+    text-align: center; /* Centres the copyright text. */
+    font-size: 13px; /* Uses smaller text. */
+}
+
+/* Provides an accessible label that is visually hidden. */
+.visually-hidden {
+    position: absolute; /* Removes the label from normal layout. */
+    width: 1px; /* Reduces its width. */
+    height: 1px; /* Reduces its height. */
+    padding: 0; /* Removes padding. */
+    margin: -1px; /* Moves it out of the visible area. */
+    overflow: hidden; /* Clips the content visually. */
+    clip: rect(0, 0, 0, 0); /* Hides the label visually. */
+    white-space: nowrap; /* Prevents the label from wrapping. */
+    border: 0; /* Removes any border. */
+}
+
+/* Adjusts testimonials and newsletter for smaller screens. */
+@media (max-width: 600px) {
+
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* Stacks testimonial cards. */
+    }
+
+    .newsletter-form {
+        flex-direction: column; /* Places the email field above the button. */
+    }
+
+    .footer-content {
+        flex-direction: column; /* Stacks footer groups vertically. */
+    }
+
+}

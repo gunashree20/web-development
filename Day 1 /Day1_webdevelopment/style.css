@@ -1,0 +1,349 @@
+/* Applies consistent sizing to all elements */
+
+* {
+    box-sizing: border-box;
+}
+
+/* General webpage styling */
+
+body {
+    margin: 0;
+    /* Removes default browser margin */
+
+    font-family: Arial, sans-serif;
+    /* Sets font */
+
+    background-color: #f4f7fb;
+    /* Sets page background */
+
+    color: #333;
+    /* Sets default text colour */
+}
+
+/* Navigation bar */
+
+.navbar {
+    display: flex;
+    /* Activates Flexbox */
+
+    justify-content: space-between;
+    /* Separates logo and links */
+
+    align-items: center;
+    /* Vertically aligns items */
+
+    padding: 20px 40px;
+    /* Adds internal spacing */
+
+    background-color: #172554;
+    /* Sets dark blue background */
+}
+
+.navbar h2 {
+    color: white;
+    /* Makes logo white */
+}
+
+.nav-links {
+    display: flex;
+    /* Arranges links horizontally */
+
+    gap: 25px;
+    /* Adds space between links */
+}
+
+.nav-links a {
+    color: white;
+    /* Sets link colour */
+
+    text-decoration: none;
+    /* Removes underline */
+}
+
+.nav-links a:hover {
+    color: #facc15;
+    /* Changes colour on hover */
+}
+
+/* Welcome section */
+
+.hero {
+    text-align: center;
+    /* Centres the text */
+
+    padding: 90px 20px;
+    /* Creates a large welcome area */
+
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    /* Adds a gradient background */
+
+    color: white;
+    /* Makes text white */
+
+    animation: fadeIn 1s ease;
+    /* Adds entrance animation */
+}
+
+.hero h1 {
+    font-size: 42px;
+    /* Makes heading larger */
+}
+
+.hero p {
+    font-size: 20px;
+    /* Changes paragraph size */
+}
+
+/* Buttons */
+
+.btn,
+button {
+    display: inline-block;
+    /* Allows button dimensions */
+
+    background-color: #facc15;
+    /* Yellow background */
+
+    color: #172554;
+    /* Dark text */
+
+    padding: 12px 24px;
+    /* Internal spacing */
+
+    border: none;
+    /* Removes border */
+
+    border-radius: 8px;
+    /* Rounds corners */
+
+    text-decoration: none;
+    /* Removes link underline */
+
+    cursor: pointer;
+    /* Shows pointer on hover */
+
+    transition: 0.3s;
+    /* Smooth hover effect */
+}
+
+.btn:hover,
+button:hover {
+    transform: translateY(-3px);
+    /* Moves button upwards */
+
+    background-color: #fde68a;
+    /* Changes button colour */
+}
+
+/* Common section styling */
+
+.section {
+    padding: 50px 30px;
+    /* Adds space around sections */
+
+    text-align: center;
+    /* Centres section content */
+}
+
+/* Course card layout */
+
+.courses {
+    display: flex;
+    /* Activates Flexbox */
+
+    justify-content: center;
+    /* Centres the cards */
+
+    align-items: stretch;
+    /* Aligns cards along cross axis */
+
+    flex-wrap: wrap;
+    /* Allows cards to wrap */
+
+    gap: 25px;
+    /* Space between cards */
+}
+
+.card {
+    background-color: white;
+    /* White card background */
+
+    padding: 30px;
+    /* Internal spacing */
+
+    width: 260px;
+    /* Card width */
+
+    border-radius: 12px;
+    /* Rounded corners */
+
+    border: 1px solid #dddddd;
+    /* Adds border */
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    /* Adds shadow */
+
+    transition: transform 0.3s ease;
+    /* Smooth movement */
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    /* Lifts card on hover */
+}
+
+/* Table styling */
+
+table {
+    width: 100%;
+    /* Uses available width */
+
+    border-collapse: collapse;
+    /* Combines table borders */
+
+    background-color: white;
+    /* White background */
+}
+
+th,
+td {
+    padding: 15px;
+    /* Adds cell spacing */
+
+    border: 1px solid #dddddd;
+    /* Adds cell borders */
+}
+
+th {
+    background-color: #2563eb;
+    /* Blue heading background */
+
+    color: white;
+    /* White heading text */
+}
+
+/* Registration form */
+
+.registration-form {
+    max-width: 450px;
+    /* Limits form width */
+
+    margin: auto;
+    /* Centres the form */
+
+    display: flex;
+    /* Activates Flexbox */
+
+    flex-direction: column;
+    /* Stacks form elements vertically */
+
+    gap: 12px;
+    /* Adds space between fields */
+
+    background-color: white;
+    /* White form background */
+
+    padding: 25px;
+    /* Internal spacing */
+
+    border-radius: 12px;
+    /* Rounded corners */
+}
+
+.registration-form input,
+.registration-form select {
+    padding: 12px;
+    /* Adds input spacing */
+
+    border: 1px solid #cccccc;
+    /* Adds input border */
+
+    border-radius: 6px;
+    /* Rounds input corners */
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    /* Centres footer text */
+
+    background-color: #172554;
+    /* Dark background */
+
+    color: white;
+    /* White text */
+
+    padding: 20px;
+    /* Adds spacing */
+}
+
+/* Entrance animation */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        /* Starts invisible */
+
+        transform: translateY(20px);
+        /* Starts slightly lower */
+    }
+
+    to {
+        opacity: 1;
+        /* Becomes visible */
+
+        transform: translateY(0);
+        /* Moves to original position */
+    }
+
+}
+
+/* Responsive design for mobile */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        /* Stacks navbar vertically */
+
+        gap: 15px;
+        /* Adds spacing */
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        /* Allows navigation links to wrap */
+
+        justify-content: center;
+        /* Centres the links */
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        /* Reduces mobile heading size */
+    }
+
+    .courses {
+        flex-direction: column;
+        /* Stacks cards vertically */
+
+        align-items: center;
+        /* Centres cards */
+    }
+
+    .card {
+        width: 100%;
+        /* Makes cards fit the available width */
+
+        max-width: 350px;
+        /* Prevents cards becoming too wide */
+    }
+
+    .section {
+        padding: 35px 15px;
+        /* Reduces mobile section spacing */
+    }
+
+}

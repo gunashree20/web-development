@@ -1,0 +1,36 @@
+body {
+    font-family: Arial;
+    background: #e8edff;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.counter {
+    background: white;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px gray;
+}
+
+h2 {
+    font-size: 50px;
+    color: blue;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: blue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+    transform: scale(1.1);
+}

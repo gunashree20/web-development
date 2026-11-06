@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MEVI Funny Face Maker</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: linear-gradient(135deg, #ffe0ec, #d9eaff);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #6c3483;
+        }
+
+        .face {
+            width: 220px;
+            height: 220px;
+            background: #ffdb70;
+            border-radius: 50%;
+            margin: 25px auto;
+            position: relative;
+            border: 5px solid #333;
+            box-shadow: 0 5px 15px #999;
+        }
+
+        .eyes {
+            font-size: 45px;
+            position: absolute;
+            top: 45px;
+            width: 100%;
+        }
+
+        .nose {
+            font-size: 35px;
+            position: absolute;
+            top: 95px;
+            width: 100%;
+        }
+
+        .mouth {
+            font-size: 45px;
+            position: absolute;
+            top: 140px;
+            width: 100%;
+        }
+
+        button {
+            background: #8e44ad;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            margin: 7px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #512e5f;
+            transform: scale(1.05);
+        }
+
+        .reset {
+            background: #e74c3c;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>🤪 MEVI FUNNY FACE MAKER</h1>
+
+    <h3>Create Your Own Funny Face!</h3>
+
+    <div class="face" id="face">
+
+        <div class="eyes" id="eyes">👀</div>
+
+        <div class="nose" id="nose">👃</div>
+
+        <div class="mouth" id="mouth">😁</div>
+
+    </div>
+
+    <h3>Choose Your Eyes</h3>
+
+    <button onclick="changeEyes('👀')">👀</button>
+    <button onclick="changeEyes('😍')">😍</button>
+    <button onclick="changeEyes('😵')">😵</button>
+    <button onclick="changeEyes('🤩')">🤩</button>
+
+    <h3>Choose Your Nose</h3>
+
+    <button onclick="changeNose('👃')">👃</button>
+    <button onclick="changeNose('🐽')">🐽</button>
+    <button onclick="changeNose('🔴')">🔴</button>
+
+    <h3>Choose Your Mouth</h3>
+
+    <button onclick="changeMouth('😁')">😁</button>
+    <button onclick="changeMouth('😜')">😜</button>
+    <button onclick="changeMouth('😮')">😮</button>
+    <button onclick="changeMouth('😆')">😆</button>
+
+    <h3>Choose Face Colour</h3>
+
+    <button onclick="changeColor('#ffdb70')">Yellow</button>
+    <button onclick="changeColor='#ffb6c1'; changeFaceColor()">Pink</button>
+    <button onclick="changeColor('#90ee90')">Green</button>
+    <button onclick="changeColor('#87ceeb')">Blue</button>
+
+    <br><br>
+
+    <button class="reset" onclick="resetFace()">🔄 Reset Face</button>
+
+    <script>
+
+        function changeEyes(value) {
+            document.getElementById("eyes").innerHTML = value;
+        }
+
+        function changeNose(value) {
+            document.getElementById("nose").innerHTML = value;
+        }
+
+        function changeMouth(value) {
+            document.getElementById("mouth").innerHTML = value;
+        }
+
+        function changeColor(value) {
+            document.getElementById("face").style.backgroundColor = value;
+        }
+
+        function resetFace() {
+            changeEyes("👀");
+            changeNose("👃");
+            changeMouth("😁");
+            changeColor("#ffdb70");
+        }
+
+    </script>
+
+</body>
+</html>

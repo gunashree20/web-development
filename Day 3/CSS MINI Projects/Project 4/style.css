@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    background-color: darkblue;
+    padding-top: 100px;
+    font-family: Arial;
+}
+
+.loader{
+    width: 70px;
+    height:70px;
+    border: 8px solid lightgrey;
+    border-top: 8px solid red;
+    border-radius: 50%;
+    margin: 30px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}

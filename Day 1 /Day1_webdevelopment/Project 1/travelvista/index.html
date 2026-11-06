@@ -1,0 +1,254 @@
+
+<!DOCTYPE html> <!-- Tells the browser that this document uses HTML5. -->
+<html lang="en"> <!-- Starts the HTML document and identifies its language. -->
+
+<head> <!-- Contains information about the page, not the visible page content. -->
+    <meta charset="UTF-8"> <!-- Allows the page to display standard Unicode characters. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page adapt to mobile screen widths. -->
+    <title>TravelVista | Explore the World</title> <!-- Sets the browser tab title. -->
+    <link rel="stylesheet" href="css/style.css">
+</head> <!-- Ends the head section. -->
+
+<body> <!-- Starts the visible content of the webpage. -->
+
+<header class="site-header"> <!-- Creates the website's header. -->
+    <div class="container nav"> <!-- Creates a centred Flexbox navigation container. -->
+
+        <a href="#" class="logo">Travel<span>Vista.</span></a> <!-- Creates the brand logo. -->
+
+        <nav aria-label="Main navigation"> <!-- Defines the primary navigation area. -->
+            <ul class="nav-links"> <!-- Groups the navigation links. -->
+                <li><a href="#home">Home</a></li> <!-- Links to the hero section. -->
+                <li><a href="#destinations">Destinations</a></li> <!-- Links to destinations. -->
+                <li><a href="#packages">Packages</a></li> <!-- Links to packages. -->
+                <li><a href="#gallery">Gallery</a></li> <!-- Links to the gallery. -->
+            </ul> <!-- Ends the navigation list. -->
+        </nav> <!-- Ends navigation. -->
+
+        <a href="#booking" class="nav-button">Book a Trip</a> <!-- Links to the enquiry form. -->
+
+    </div> <!-- Ends the navigation container. -->
+</header> <!-- Ends the website header. -->
+
+
+<main> <!-- Begins the main content of the page. -->
+
+    <section class="hero" id="home"> <!-- Creates the main hero section. -->
+        <div class="container hero-content"> <!-- Creates the centred content wrapper. -->
+
+            <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p> <!-- Adds a small introductory label. -->
+
+            <h1>Discover the World, One Journey at a Time.</h1> <!-- Displays the main marketing headline. -->
+
+            <p class="hero-description"> <!-- Starts the supporting description. -->
+                Explore extraordinary destinations, create unforgettable memories,
+                and experience the beauty of travelling.
+            </p> <!-- Ends the description. -->
+
+            <div class="hero-actions"> <!-- Groups the hero buttons. -->
+                <a href="#destinations" class="button button-primary">Explore Destinations</a> <!-- Main call to action. -->
+                <a href="#packages" class="button button-outline">View Packages</a> <!-- Secondary call to action. -->
+            </div> <!-- Ends the button group. -->
+
+        </div> <!-- Ends the hero content wrapper. -->
+    </section> <!-- Ends the hero section. -->
+</main> <!-- Ends the main content. -->
+
+
+<section class="section" id="destinations"> <!-- Creates the destination section. -->
+    <div class="container"> <!-- Centres the section content. -->
+
+        <p class="eyebrow">FIND YOUR ESCAPE</p> <!-- Adds the section label. -->
+        <h2 class="section-title">Popular Destinations</h2> <!-- Adds the main section heading. -->
+        <p class="section-intro">Explore beautiful places selected for your next unforgettable adventure.</p> <!-- Adds an introduction. -->
+
+        <div class="destination-grid"> <!-- Creates the destination card grid. -->
+
+            <article class="destination-card"> <!-- Creates the first independent destination card. -->
+                <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800" alt="Goa beach and coastline"> <!-- Displays the Goa photograph. -->
+                <div class="card-content"> <!-- Groups the card text. -->
+                    <p class="card-label">BEACH ESCAPE</p> <!-- Identifies the travel category. -->
+                    <h3>Goa, India</h3> <!-- Names the destination. -->
+                    <p>Relax on beautiful beaches and enjoy coastal life.</p> <!-- Describes the destination. -->
+                    <a href="#booking" class="card-link">Explore more →</a> <!-- Links to the enquiry section. -->
+                </div> <!-- Ends the card content. -->
+            </article> <!-- Ends the first card. -->
+
+            <article class="destination-card"> <!-- Creates the second destination card. -->
+                <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?w=800" alt="Kerala green landscape"> <!-- Displays the Kerala photograph. -->
+                <div class="card-content"> <!-- Groups the card text. -->
+                    <p class="card-label">NATURE RETREAT</p> <!-- Identifies the category. -->
+                    <h3>Kerala, India</h3> <!-- Names the destination. -->
+                    <p>Experience peaceful backwaters and lush green landscapes.</p> <!-- Describes the destination. -->
+                    <a href="#booking" class="card-link">Explore more →</a> <!-- Links to the enquiry section. -->
+                </div> <!-- Ends the card content. -->
+            </article> <!-- Ends the second card. -->
+
+            <article class="destination-card"> <!-- Creates the third destination card. -->
+                <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800" alt="Himalayan mountain landscape"> <!-- Displays the mountain photograph. -->
+                <div class="card-content"> <!-- Groups the card text. -->
+                    <p class="card-label">MOUNTAIN ADVENTURE</p> <!-- Identifies the category. -->
+                    <h3>Manali, India</h3> <!-- Names the destination. -->
+                    <p>Discover mountain views and exciting outdoor adventures.</p> <!-- Describes the destination. -->
+                    <a href="#booking" class="card-link">Explore more →</a> <!-- Links to the enquiry section. -->
+                </div> <!-- Ends the card content. -->
+            </article> <!-- Ends the third card. -->
+
+            <article class="destination-card"> <!-- Creates the fourth destination card. -->
+                <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800" alt="New York city skyline"> <!-- Displays a city photograph. -->
+                <div class="card-content"> <!-- Groups the card text. -->
+                    <p class="card-label">CITY EXPERIENCE</p> <!-- Identifies the category. -->
+                    <h3>New York, USA</h3> <!-- Names the destination. -->
+                    <p>Experience iconic attractions and vibrant city culture.</p> <!-- Describes the destination. -->
+                    <a href="#booking" class="card-link">Explore more →</a> <!-- Links to the enquiry section. -->
+                </div> <!-- Ends the card content. -->
+            </article> <!-- Ends the fourth card. -->
+
+            <article class="destination-card"> <!-- Creates the fifth destination card. -->
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800" alt="Santorini coastal architecture"> <!-- Displays the Santorini photograph. -->
+                <div class="card-content"> <!-- Groups the card text. -->
+                    <p class="card-label">ROMANTIC GETAWAY</p> <!-- Identifies the category. -->
+                    <h3>Santorini, Greece</h3> <!-- Names the destination. -->
+                    <p>Enjoy stunning coastal views and beautiful sunsets.</p> <!-- Describes the destination. -->
+                    <a href="#booking" class="card-link">Explore more →</a> <!-- Links to the enquiry section. -->
+                </div> <!-- Ends the card content. -->
+            </article> <!-- Ends the fifth card. -->
+
+            <article class="destination-card"> <!-- Creates the sixth destination card. -->
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800" alt="Dubai city skyline"> <!-- Displays the Dubai photograph. -->
+                <div class="card-content"> <!-- Groups the card text. -->
+                    <p class="card-label">LUXURY ESCAPE</p> <!-- Identifies the category. -->
+                    <h3>Dubai, UAE</h3> <!-- Names the destination. -->
+                    <p>Discover modern attractions and unforgettable experiences.</p> <!-- Describes the destination. -->
+                    <a href="#booking" class="card-link">Explore more →</a> <!-- Links to the enquiry section. -->
+                </div> <!-- Ends the card content. -->
+            </article> <!-- Ends the sixth card. -->
+
+        </div> <!-- Ends the destination grid. -->
+    </div> <!-- Ends the container. -->
+</section> <!-- Ends the destination section. -->
+<section class="section packages" id="packages"> <!-- Starts the travel packages section. -->
+    <div class="container"> <!-- Centres the content. -->
+        <p class="eyebrow">TRAVEL YOUR WAY</p> <!-- Adds a category label. -->
+        <h2 class="section-title">Choose Your Experience</h2> <!-- Adds the section heading. -->
+
+        <div class="package-grid"> <!-- Creates a three-column package layout. -->
+
+            <article class="package-card"> <!-- Creates the first package. -->
+                <p class="card-label">WEEKEND ESCAPE</p> <!-- Identifies the package type. -->
+                <h3>Coastal Retreat</h3> <!-- Names the package. -->
+                <p class="price">₹8,999 <small>/ person</small></p> <!-- Displays the indicative price. -->
+                <ul> <!-- Starts the package features. -->
+                    <li>2 nights accommodation</li> <!-- Lists the first inclusion. -->
+                    <li>Breakfast included</li> <!-- Lists the second inclusion. -->
+                    <li>Guided sightseeing</li> <!-- Lists the third inclusion. -->
+                </ul> <!-- Ends the features list. -->
+                <a href="#booking" class="button button-primary">Enquire Now</a> <!-- Links to booking. -->
+            </article> <!-- Ends the first package. -->
+
+            <article class="package-card featured"> <!-- Creates the highlighted second package. -->
+                <p class="card-label">MOST POPULAR</p> <!-- Highlights the package. -->
+                <h3>Mountain Explorer</h3> <!-- Names the package. -->
+                <p class="price">₹14,999 <small>/ person</small></p> <!-- Displays the indicative price. -->
+                <ul> <!-- Starts the package features. -->
+                    <li>4 nights accommodation</li> <!-- Lists an inclusion. -->
+                    <li>Daily breakfast</li> <!-- Lists an inclusion. -->
+                    <li>Adventure activities</li> <!-- Lists an inclusion. -->
+                </ul> <!-- Ends the features list. -->
+                <a href="#booking" class="button button-primary">Enquire Now</a> <!-- Links to booking. -->
+            </article> <!-- Ends the second package. -->
+
+            <article class="package-card"> <!-- Creates the third package. -->
+                <p class="card-label">PREMIUM JOURNEY</p> <!-- Identifies the package type. -->
+                <h3>Luxury Discovery</h3> <!-- Names the package. -->
+                <p class="price">₹24,999 <small>/ person</small></p> <!-- Displays the indicative price. -->
+                <ul> <!-- Starts the package features. -->
+                    <li>5 nights accommodation</li> <!-- Lists an inclusion. -->
+                    <li>Private transfers</li> <!-- Lists an inclusion. -->
+                    <li>Personal travel support</li> <!-- Lists an inclusion. -->
+                </ul> <!-- Ends the features list. -->
+                <a href="#booking" class="button button-primary">Enquire Now</a> <!-- Links to booking. -->
+            </article> <!-- Ends the third package. -->
+
+        </div> <!-- Ends the package grid. -->
+    </div> <!-- Ends the container. -->
+</section> <!-- Ends the packages section. -->
+
+<section class="section" id="gallery"> <!-- Starts the gallery section. -->
+    <div class="container"> <!-- Centres gallery content. -->
+        <p class="eyebrow">VISUAL JOURNEYS</p> <!-- Adds the category label. -->
+        <h2 class="section-title">A Glimpse of the World</h2> <!-- Adds the heading. -->
+
+        <div class="gallery-grid"> <!-- Creates the gallery grid. -->
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900" alt="Mountain landscape"> <!-- Shows a mountain photograph. -->
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=900" alt="Ocean waves"> <!-- Shows an ocean photograph. -->
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=900" alt="Lake surrounded by mountains"> <!-- Shows a lake photograph. -->
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900" alt="Beautiful natural scenery"> <!-- Shows a landscape photograph. -->
+        </div> <!-- Ends the gallery grid. -->
+    </div> <!-- Ends the container. -->
+</section> <!-- Ends the gallery section. -->
+
+<section class="section testimonials"> <!-- Creates the testimonials section. -->
+    <div class="container"> <!-- Centres the section content. -->
+        <p class="eyebrow">TRAVELLER STORIES</p> <!-- Adds the section label. -->
+        <h2 class="section-title">What Our Travellers Say</h2> <!-- Adds the heading. -->
+
+        <div class="testimonial-grid"> <!-- Creates the testimonial card layout. -->
+
+            <article class="testimonial-card"> <!-- Creates the first testimonial. -->
+                <p>"The trip was beautifully organised. Every detail was taken care of."</p> <!-- Displays the review. -->
+                <h3>Priya Sharma</h3> <!-- Displays the traveller's name. -->
+                <small>Visited Kerala</small> <!-- Displays the destination. -->
+            </article> <!-- Ends the first testimonial. -->
+
+            <article class="testimonial-card"> <!-- Creates the second testimonial. -->
+                <p>"An amazing experience! The team made our holiday truly memorable."</p> <!-- Displays the review. -->
+                <h3>Rahul Mehta</h3> <!-- Displays the traveller's name. -->
+                <small>Visited Goa</small> <!-- Displays the destination. -->
+            </article> <!-- Ends the second testimonial. -->
+
+        </div> <!-- Ends the testimonial grid. -->
+    </div> <!-- Ends the container. -->
+</section> <!-- Ends the testimonials section. -->
+
+<section class="newsletter"> <!-- Creates the newsletter section. -->
+    <div class="container"> <!-- Centres the content. -->
+        <h2>Get Travel Inspiration</h2> <!-- Displays the newsletter heading. -->
+        <p>Discover new destinations and travel ideas.</p> <!-- Explains the newsletter. -->
+
+        <form class="newsletter-form"> <!-- Creates a newsletter signup form. -->
+            <label class="visually-hidden" for="newsletter-email">Email address</label> <!-- Provides an accessible label. -->
+            <input id="newsletter-email" type="email" placeholder="Enter your email" required> <!-- Collects the email address. -->
+            <button type="submit">Subscribe</button> <!-- Creates the subscription button. -->
+        </form> <!-- Ends the newsletter form. -->
+    </div> <!-- Ends the container. -->
+</section> <!-- Ends the newsletter section. -->
+
+<footer class="site-footer"> <!-- Starts the footer. -->
+    <div class="container footer-content"> <!-- Creates the footer layout. -->
+        <div> <!-- Groups the brand information. -->
+            <a href="#" class="logo footer-logo">Travel<span>Vista.</span></a> <!-- Displays the footer logo. -->
+            <p>Explore. Discover. Experience.</p> <!-- Displays the brand tagline. -->
+        </div> <!-- Ends the brand group. -->
+
+        <div> <!-- Groups contact information. -->
+            <h3>Contact</h3> <!-- Adds a footer heading. -->
+            <p>Email: info@travelvista.example</p> <!-- Displays a sample email address. -->
+            <p>Phone: +91 12345 67890</p> <!-- Displays a sample telephone number. -->
+        </div> <!-- Ends the contact group. -->
+
+        <div> <!-- Groups footer navigation. -->
+            <h3>Quick Links</h3> <!-- Adds a footer heading. -->
+            <p><a href="#home">Home</a></p> <!-- Links to the top. -->
+            <p><a href="#destinations">Destinations</a></p> <!-- Links to destinations. -->
+            <p><a href="#booking">Contact Us</a></p> <!-- Links to booking. -->
+        </div> <!-- Ends the footer navigation group. -->
+    </div> <!-- Ends the footer layout. -->
+
+    <div class="copyright"> <!-- Creates the copyright line. -->
+        <p>© 2026 TravelVista. All rights reserved.</p> <!-- Displays the copyright notice. -->
+    </div> <!-- Ends the copyright area. -->
+</footer> <!-- Ends the footer. -->
+
+</body> <!-- Ends the visible page content. -->
+</html> <!-- Ends the HTML document. -->

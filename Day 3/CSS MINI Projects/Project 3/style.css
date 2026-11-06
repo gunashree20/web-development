@@ -1,0 +1,23 @@
+body{
+    text-align:center;
+    background-color:deeppink;
+    padding-top:50px;
+}
+
+.ball{
+    width: 80px;
+    height:80px;
+    background-color: beige;
+    border-radius: 50%;
+    margin:100px auto;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100px);
+    }
+}

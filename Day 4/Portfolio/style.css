@@ -1,0 +1,887 @@
+
+/* ========================================
+   1. GLOBAL STYLES
+======================================== */
+
+:root {
+    --ink: #20211f;
+    --muted: #6e706b;
+    --paper: #f7f6f1;
+    --line: #deded5;
+    --lime: #d9f36a;
+
+    --serif: "Playfair Display", Georgia, serif;
+    --sans: "DM Sans", Arial, sans-serif;
+}
+
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+/* Body styling */
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+}
+
+/* Remove underline from links */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* ========================================
+   2. NAVIGATION BAR
+======================================== */
+
+.site-nav {
+    background: rgba(247, 246, 241, 0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(32, 33, 31, 0.08);
+}
+
+/* Logo */
+.brand-mark {
+    font-family: var(--serif);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.brand-mark span {
+    color: #8cae22;
+}
+
+/* Navigation links */
+.nav-link {
+    color: var(--ink);
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #78951d;
+}
+
+/* Navigation button */
+.nav-cta {
+    font-size: 0.85rem;
+    padding: 0.65rem 1.1rem;
+}
+
+
+/* ========================================
+   3. COMMON TYPOGRAPHY
+======================================== */
+
+.eyebrow,
+.section-kicker {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--muted);
+}
+
+/* Green status dot */
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background: #8eb52b;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #e8efcf;
+}
+
+/* Section headings */
+.section-kicker {
+    color: #777a70;
+    margin-bottom: 2.2rem;
+}
+
+.section-title {
+    font-family: var(--serif);
+    font-size: clamp(2.4rem, 5vw, 4.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+}
+
+/* Highlighted heading text */
+.section-title em,
+h1 em,
+.strip-quote em,
+.contact-section h2 em {
+    font-weight: 500;
+    color: #829f25;
+}
+
+/* Normal paragraph */
+.body-copy {
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 0.98rem;
+}
+
+
+/* ========================================
+   4. HERO SECTION
+======================================== */
+
+.hero-section {
+    padding: 9.5rem 0 2rem;
+    min-height: 750px;
+}
+
+/* Main heading */
+.hero-section h1 {
+    font-family: var(--serif);
+    font-size: clamp(3.6rem, 7vw, 6.8rem);
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+    margin: 1.5rem 0;
+}
+
+/* Introduction paragraph */
+.hero-copy {
+    max-width: 560px;
+    color: var(--muted);
+    font-size: 1.12rem;
+    line-height: 1.8;
+}
+
+.hero-copy strong {
+    color: var(--ink);
+}
+
+/* Social media row */
+.social-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Social media circles */
+.social-row a {
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.2s;
+}
+
+/* Hover effect */
+.social-row a:hover {
+    background: var(--ink);
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Social media note */
+.social-note {
+    color: var(--muted);
+    font-size: 0.75rem;
+    margin-left: 0.35rem;
+}
+
+
+/* ========================================
+   5. PROFILE PHOTOGRAPH
+======================================== */
+
+.portrait-wrap {
+    position: relative;
+    max-width: 410px;
+    margin: auto;
+    padding: 1.2rem 1.2rem 1.2rem 0;
+}
+
+/* Background shape behind photograph */
+.portrait-wrap::before {
+    content: "";
+    position: absolute;
+    inset: 2.2rem 0 0 2.2rem;
+    background: var(--lime);
+    border-radius: 48% 48% 8px 8px;
+    transform: rotate(3deg);
+}
+
+/* Student photograph */
+.hero-portrait {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 48% 48% 8px 8px;
+    filter: saturate(0.88);
+}
+
+/* Small photo label */
+.portrait-note {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: white;
+    padding: 0.7rem 1rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    box-shadow: 0 8px 30px #00000012;
+}
+
+/* Decorative sticker */
+.portrait-sticker {
+    position: absolute;
+    z-index: 2;
+    right: -1rem;
+    bottom: 2rem;
+    background: var(--ink);
+    color: white;
+    border-radius: 50%;
+    width: 112px;
+    height: 112px;
+    display: grid;
+    align-content: center;
+    text-align: center;
+    font-size: 0.63rem;
+    line-height: 1.45;
+    letter-spacing: 0.12em;
+    transform: rotate(9deg);
+}
+
+.portrait-sticker span {
+    color: var(--lime);
+    font-size: 1.4rem;
+}
+
+/* Scroll indicator */
+.hero-bottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--muted);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    margin-top: 4rem;
+}
+
+.scroll-line {
+    height: 1px;
+    background: var(--line);
+    flex: 1;
+}
+
+
+/* ========================================
+   6. PERSONAL MANTRA STRIP
+======================================== */
+
+.intro-strip {
+    padding: 2.2rem 0;
+    background: #eeeee5;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+.strip-quote {
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+
+/* ========================================
+   7. GENERAL SECTION STYLES
+======================================== */
+
+.section-pad {
+    padding: 7rem 0;
+}
+
+/* About paragraph */
+.lead-copy {
+    font-family: var(--serif);
+    font-size: 1.55rem;
+    line-height: 1.45;
+}
+
+/* About fact cards */
+.fact-box {
+    background: white;
+    border: 1px solid var(--line);
+    padding: 1.2rem;
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+}
+
+.fact-box span {
+    color: #829f25;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.fact-box strong {
+    margin-top: auto;
+}
+
+.fact-box small {
+    color: var(--muted);
+}
+
+
+/* ========================================
+   8. SKILLS SECTION
+======================================== */
+
+.skills-section {
+    background: #eeeee5;
+}
+
+/* Individual skill card */
+.skill-card {
+    height: 165px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 0.25s;
+}
+
+/* Skill card hover */
+.skill-card:hover {
+    background: var(--lime);
+    transform: translateY(-5px);
+    border-color: var(--lime);
+}
+
+.skill-card i {
+    font-size: 1.55rem;
+}
+
+.skill-card strong {
+    font-size: 1.05rem;
+}
+
+.skill-card small {
+    color: var(--muted);
+}
+
+
+/* ========================================
+   9. LEARNING JOURNEY
+======================================== */
+
+.timeline {
+    border-top: 1px solid var(--line);
+}
+
+/* Each timeline entry */
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr 50px;
+    gap: 2rem;
+    align-items: start;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.timeline-date {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+    color: #829f25;
+    padding-top: 0.4rem;
+}
+
+.timeline-item h3 {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+}
+
+.timeline-item p {
+    margin-bottom: 0;
+}
+
+.timeline-index {
+    color: #a4a69d;
+    font-size: 0.8rem;
+    text-align: right;
+}
+
+
+/* ========================================
+   10. PROJECTS SECTION
+======================================== */
+
+.projects-section {
+    background: #20211f;
+    color: #f7f6f1;
+}
+
+.projects-section .section-kicker {
+    color: #b6b8ac;
+}
+
+.projects-section .section-title em {
+    color: var(--lime);
+}
+
+.project-intro {
+    max-width: 340px;
+    color: #b6b8ac;
+}
+
+/* Project card */
+.project-card {
+    height: 100%;
+}
+
+/* Project preview area */
+.project-visual {
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    color: var(--ink);
+}
+
+/* Project background colours */
+.visual-lime {
+    background: #d9f36a;
+}
+
+.visual-lavender {
+    background: #d8d0f3;
+}
+
+.visual-peach {
+    background: #f2cdb8;
+}
+
+.visual-blue {
+    background: #b9d9e9;
+}
+
+.visual-pink {
+    background: #efc7d3;
+}
+
+/* Project preview labels */
+.visual-label,
+.visual-caption {
+    position: absolute;
+    left: 1.2rem;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+}
+
+.visual-label {
+    top: 1.2rem;
+}
+
+.visual-caption {
+    bottom: 1.2rem;
+}
+
+
+/* Bouncing ball animation */
+.demo-ball {
+    width: 75px;
+    height: 75px;
+    background: #242520;
+    border-radius: 50%;
+    box-shadow: 0 18px 0 -8px #697b27;
+    animation: bounce 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(-35px);
+    }
+
+    to {
+        transform: translateY(25px);
+    }
+}
+
+
+/* Loading spinner animation */
+.loader-demo {
+    width: 75px;
+    height: 75px;
+    border: 8px solid #ffffff90;
+    border-top-color: #242520;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Profile card preview */
+.mini-profile {
+    background: #fffaf4;
+    width: 180px;
+    min-height: 180px;
+    border-radius: 12px;
+    box-shadow: 0 18px 35px #6d51452b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+}
+
+.mini-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f2cdb8;
+    display: grid;
+    place-items: center;
+    font-family: var(--serif);
+    font-size: 1.5rem;
+}
+
+.mini-profile small {
+    color: var(--muted);
+}
+
+.mini-pill {
+    margin-top: 0.4rem;
+    background: var(--ink);
+    color: white;
+    border-radius: 30px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+}
+
+
+/* Guess the Number preview */
+.game-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.game-demo span:first-child {
+    width: 75px;
+    height: 75px;
+    display: grid;
+    place-items: center;
+    background: white;
+    border-radius: 18px;
+    font-family: var(--serif);
+    font-size: 3rem;
+}
+
+.game-demo span:nth-child(2) {
+    font-size: 1rem;
+    line-height: 1.1;
+    letter-spacing: 0.1em;
+}
+
+.game-demo b {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+}
+
+
+/* Whack-a-Mole preview */
+.mole-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 45px);
+    gap: 9px;
+}
+
+.mole-grid i {
+    width: 45px;
+    height: 38px;
+    border-radius: 50% 50% 8px 8px;
+    background: #b38d76;
+    border: 4px solid #815f4e;
+}
+
+.mole-grid .mole {
+    background: #5d453c;
+    position: relative;
+}
+
+.mole-grid .mole::after {
+    content: "••";
+    color: white;
+    letter-spacing: 4px;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+}
+
+
+/* Project description area */
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.35rem 0 1.8rem;
+    border-bottom: 1px solid #ffffff30;
+}
+
+.project-meta h3 {
+    font-family: var(--serif);
+    font-size: 1.55rem;
+}
+
+.project-meta p {
+    color: #b6b8ac;
+    font-size: 0.85rem;
+    max-width: 390px;
+}
+
+/* Technology tags */
+.tag {
+    display: inline-block;
+    border: 1px solid #ffffff45;
+    border-radius: 30px;
+    padding: 0.25rem 0.65rem;
+    margin: 0.2rem 0.25rem 0 0;
+    color: #e3e4dc;
+    font-size: 0.65rem;
+}
+
+/* Project link button */
+.project-link {
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #ffffff60;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.project-link:hover {
+    color: var(--ink);
+    background: var(--lime);
+    border-color: var(--lime);
+}
+
+/* Add your own project area */
+.add-project {
+    min-height: 390px;
+    border: 1px dashed #ffffff55;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.add-project-inner span {
+    color: var(--lime);
+    font-size: 2rem;
+}
+
+.add-project-inner h3 {
+    font-family: var(--serif);
+    font-size: 2rem;
+}
+
+.add-project-inner p {
+    color: #b6b8ac;
+    max-width: 280px;
+}
+
+/* GitHub link */
+.text-link {
+    display: inline-block;
+    border-bottom: 1px solid var(--lime);
+    padding-bottom: 0.4rem;
+    color: var(--lime);
+}
+
+
+/* ========================================
+   11. ACHIEVEMENTS
+======================================== */
+
+.achievements-section {
+    background: #eeeee5;
+}
+
+.achievement-row {
+    display: grid;
+    grid-template-columns: 60px 1fr 20px;
+    gap: 1rem;
+    align-items: center;
+    padding: 1.35rem 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.achievement-row > span {
+    color: #829f25;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.achievement-row strong,
+.achievement-row small {
+    display: block;
+}
+
+.achievement-row small {
+    color: var(--muted);
+    margin-top: 0.25rem;
+}
+
+
+/* ========================================
+   12. CONTACT SECTION
+======================================== */
+
+.contact-section {
+    background: #829f25;
+    color: #fff;
+}
+
+.contact-section .section-kicker {
+    color: #eff6d8;
+}
+
+.contact-section h2 {
+    font-family: var(--serif);
+    font-size: clamp(3rem, 7vw, 6rem);
+    line-height: 1.02;
+    letter-spacing: -0.05em;
+}
+
+.contact-section h2 em {
+    color: #20211f;
+}
+
+.contact-section p {
+    color: #f0f4df;
+    max-width: 520px;
+    line-height: 1.8;
+}
+
+/* Contact footer area */
+.contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-top: 1px solid #ffffff65;
+    margin-top: 5rem;
+    padding-top: 1.5rem;
+}
+
+.contact-bottom > a {
+    font-family: var(--serif);
+    font-size: 1.4rem;
+}
+
+.contact-socials {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+}
+
+
+/* ========================================
+   13. WEBSITE FOOTER
+======================================== */
+
+.site-footer {
+    background: #20211f;
+    color: #b6b8ac;
+    padding: 1.2rem 0;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+}
+
+
+/* ========================================
+   14. RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 767.98px) {
+
+    /* Reduce hero top spacing */
+    .hero-section {
+        padding-top: 7.5rem;
+    }
+
+    /* Adjust main heading */
+    .hero-section h1 {
+        font-size: clamp(3.2rem, 15vw, 5rem);
+    }
+
+    /* Reduce section spacing */
+    .section-pad {
+        padding: 5rem 0;
+    }
+
+    /* Social note moves to a new line */
+    .social-note {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+
+    /* Timeline layout for mobile */
+    .timeline-item {
+        grid-template-columns: 1fr 35px;
+        gap: 0.5rem 1rem;
+    }
+
+    .timeline-date {
+        grid-column: 1 / -1;
+    }
+
+    .timeline-index {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .timeline-item > div:nth-child(2) {
+        grid-column: 1;
+    }
+
+    /* Project preview height */
+    .project-visual {
+        height: 250px;
+    }
+
+    .contact-bottom {
+        margin-top: 3rem;
+    }
+}

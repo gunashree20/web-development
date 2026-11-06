@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Rescue</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #172554;
+        }
+
+        /* Hero section */
+        .hero {
+            background: #dbeafe;
+            padding: 60px 0;
+        }
+
+        /* Image styling */
+        .hero img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        /* Service cards */
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Feature section */
+        .feature-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            height: 100%;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Responsive navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                TECH SOLUTIONS
+            </a>
+
+            <!-- Mobile menu button -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero" id="home">
+        <div class="container">
+
+            <div class="row align-items-center g-4">
+
+                <!-- Text column -->
+                <div class="col-12 col-md-6">
+
+                    <span class="badge bg-primary mb-3">
+                        Welcome to Tech Solutions
+                    </span>
+
+                    <h1 class="display-5 fw-bold">
+                        Build Your Digital Future
+                    </h1>
+
+                    <p class="lead">
+                        We help businesses grow through creative
+                        technology and innovative solutions.
+                    </p>
+
+                    <a href="#services" class="btn btn-primary btn-lg">
+                        Explore Services
+                    </a>
+
+                </div>
+
+                <!-- Image column -->
+                <div class="col-12 col-md-6">
+
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900"
+                         alt="Workspace with a computer">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-5" id="services">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Our Services</h2>
+                <p class="text-muted">
+                    Solutions to help you succeed
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Service 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body p-4">
+
+                            <h3>💻</h3>
+                            <h4>Web Development</h4>
+
+                            <p class="text-muted">
+                                We build modern and responsive websites
+                                for businesses.
+                            </p>
+
+                            <a href="#" class="btn btn-outline-primary">
+                                Learn More
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body p-4">
+
+                            <h3>🎨</h3>
+                            <h4>UI/UX Design</h4>
+
+                            <p class="text-muted">
+                                We create user-friendly and attractive
+                                digital experiences.
+                            </p>
+
+                            <a href="#" class="btn btn-outline-primary">
+                                Learn More
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card service-card shadow-sm">
+                        <div class="card-body p-4">
+
+                            <h3>📱</h3>
+                            <h4>Mobile Solutions</h4>
+
+                            <p class="text-muted">
+                                We help create useful experiences
+                                for mobile users.
+                            </p>
+
+                            <a href="#" class="btn btn-outline-primary">
+                                Learn More
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why choose us -->
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <div class="row g-4 align-items-center">
+
+                <div class="col-12 col-md-6">
+
+                    <h2 class="fw-bold">Why Choose Us?</h2>
+
+                    <p>
+                        We believe technology should make life easier.
+                        Our team focuses on quality, creativity and
+                        customer satisfaction.
+                    </p>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            ✔ Responsive Websites
+                        </li>
+                        <li class="list-group-item">
+                            ✔ Modern Design
+                        </li>
+                        <li class="list-group-item">
+                            ✔ Reliable Support
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-12 col-md-6">
+
+                    <div class="feature-box shadow-sm">
+                        <h3>Our Mission</h3>
+
+                        <p>
+                            To make technology accessible and useful
+                            through simple, effective digital solutions.
+                        </p>
+
+                        <!-- Hidden on small screens -->
+                        <div class="d-none d-md-block">
+                            <span class="badge bg-success">
+                                Desktop Feature
+                            </span>
+                            <p class="mt-2 mb-0">
+                                This additional message appears on
+                                medium and larger screens.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-5" id="contact">
+        <div class="container text-center">
+
+            <h2>Let's Work Together</h2>
+
+            <p class="text-muted">
+                Have a project idea? Contact us today.
+            </p>
+
+            <a href="mailto:hello@example.com"
+               class="btn btn-primary">
+                Contact Us
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p class="mb-0">
+            © 2026 Tech Solutions
+        </p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
